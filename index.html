@@ -2,325 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Planet Fitness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planet Fitness & Spa – Premium Gym and Wellness Centre in Karnal. Explore our equipment, spa, personal training, and fitness programs.">
+    <meta name="keywords" content="Planet Fitness, Gym Karnal, Fitness Spa Haryana, Gym Sector 7 Karnal, Personal Training Karnal">
+    <title>Planet Fitness & Spa</title>
 
-    <!----CSS link----->
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/7a5bf939ff.js" crossorigin="anonymous"></script>
   </head>
 
-
-
   <body>
-  <div  id="header">
-     <div class="container">
-      <!-- <video autoplay loop muted plays-inline class="back-video">
-        <source src="images/aboutMe.mp4" type="video/mp4">
-      </video> -->
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
         <nav>
-          <!-- <img src="images/name.png" class="logo"> -->
-          <!-- <img src="images/3.jpg" id="center">    -->
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Gym pics</a></li>
-                <li><a href="#certificate_section">More pics</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-         </nav>
-         <div class="header-text">
-              <h2> < Planet Fitness GYM > </h2><br>
-              <h3>Hi&nbsp;, this is &nbsp;<span>Planet Fitness</span><br><br>Welcome to our Website</h3>
-         </div> 
-
-       </div>
-    </div>
-<!------------------------------About Section------------------------------>
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="images/bg.png" alt="Plannet Fitness and Spa">
-      </div>
-      <div class="about-col-2">
-        <h2 class="sub-title">About Us</h2>
-        <p class="for_mobile">
-          Plannet Fitness and Spa is Karnal’s premium gym and wellness destination, designed for those who are serious about fitness, health, and a better lifestyle.
-        </p>
-
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('who')">Who We Are</p>
-          <p class="tab-links" onclick="opentab('offer')">What We Offer</p>
-          <p class="tab-links" onclick="opentab('timing')">Timings & Location</p>
-        </div>
-
-        <div class="tab-contents active-tab" id="who">
-          <ul>
-            <li>
-              <span>Transform Your Life</span><br>
-              <h9>We are a modern gym and wellness space committed to helping individuals achieve their fitness goals through expert guidance, personalized plans, and a motivating environment.</h9>
-            </li>
-            <li>
-              <span>Professional Guidance</span><br>
-              <h9>Our certified trainers, nutrition experts, and wellness coaches ensure every member gets personal attention and sustainable results.</h9>
-            </li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
-        </div>
-
-        <div class="tab-contents" id="offer">
-          <ul>
-            <li><span>Gym Services</span><br><h9>Strength Training, Cardio, CrossFit, Functional Training, Personal Training</h9></li>
-            <li><span>Group Sessions</span><br><h9>Zumba, Yoga, Aerobics</h9></li>
-            <li><span>Wellness</span><br><h9>Spa, Steam, Sauna, Relaxation Lounge</h9></li>
-            <li><span>Support</span><br><h9>Diet & Nutrition Guidance, Fitness Assessments, Progress Tracking</h9></li>
-          </ul>
-        </div>
-
-        <div class="tab-contents" id="timing">
-          <ul>
-            <li><span>📍 Address</span><br><h9>SCO. 99-100, Sector 7 Main Market, Karnal, Haryana, India</h9></li>
-            <li><span>🕒 Timings</span><br>
-              <h9>Mon–Sat: 5:00 AM – 10:00 PM<br>Sunday: 7:00 AM – 1:00 PM</h9>
-            </li>
-            <li><span>📞 Contact</span><br><h9>+91-XXXXXXXXXX</h9></li>
-            <li><span>📧 Email</span><br><h9>plannetfitnesskarnal@gmail.com</h9></li>
-          </ul>
-        </div>
-
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h2>&lt; Planet Fitness GYM &gt;</h2><br>
+          <h3>Hi, this is <span>Planet Fitness</span><br><br>Welcome to our Website</h3>
+        </div> 
       </div>
     </div>
-  </div>
-</div>
-    
-<!-- ------------------------------Gym pics---------------------------- -->
-<div id="projects">
-  <div class="container">
-    <h1 class="sub-title">Gym pics</h1><br>
-    <div class="projects-list">
-      
-      <div>
-        <i class="fas fa-book"></i>
-        <h2>Smart Fitness Insights</h2>
-        <br>
-        <p>
-          An AI-powered fitness dashboard built with R Shiny to monitor health metrics, analyze activity patterns, and deliver personalized workout and lifestyle recommendations in real time.
-          <br><br>
-          <strong>Tech used:</strong> R, Shiny, Shinydashboard, ggplot2, dplyr, readr, scales, Plotly, RStudio, CSV, Collaborative Filtering, Random Forest, Isolation Forest, Rule-Based AI.
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Smart-Fitness-Insights" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
-      
-      <div>
-        <i class="fa-solid fa-comments"></i>
-        <h2>Blood Management System</h2>
-        <br>
-        <p>
-          A web-based Blood Management System enabling secure donor-recipient matching and email-driven blood request handling within a university setting.
-          <br><br>
-          <strong>Tech used:</strong> HTML, CSS, JavaScript (Node.js with Express), MongoDB
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Blood-Management-System" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
 
-      <div>
-        <i class="fa-solid fa-file"></i>
-        <h2>Sentiment Analysis</h2>
-        <br>
-        <p>
-          Developed an AI-powered system that analyzes speech sentiment and visualizes emotional tone using NLP and data visualization.
-          <br><br>
-          <strong>Tech used:</strong> Python, NLTK (VADER), Google Speech Recognition, Matplotlib
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Sentiment-Analysis" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/bg.png" alt="Plannet Fitness and Spa">
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Us</h2>
+            <p class="for_mobile">
+              Plannet Fitness and Spa is Karnal’s premium gym and wellness destination, designed for those who are serious about fitness, health, and a better lifestyle.
+            </p>
 
-      <div>
-        <i class="fa-solid fa-video"></i>
-        <h2>Talk Lens (Ongoing)</h2>
-        <br>
-        <p>
-          An AI-powered smart glasses system that reads and translates text aloud based on hand gestures.
-          <br><br>
-          <strong>Tech used:</strong> Python, MediaPipe, PaddleOCR, OpenCV, pyttsx3, ESP32, Arducam, 3D Printing
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Talk-Lens" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('who')">Who We Are</p>
+              <p class="tab-links" onclick="opentab('offer')">What We Offer</p>
+              <p class="tab-links" onclick="opentab('timing')">Timings & Location</p>
+            </div>
 
-      <div>
-        <i class="fas fa-book"></i>
-        <h2>Encoder - Decoder Application</h2>
-        <br>
-        <p>
-          Android Application developed using Kotlin and Jetpack Compose in Android Studio.
-          <br><br>
-          <strong>More info:</strong> Click below to view the repository.
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/App_Development" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
+            <div class="tab-contents active-tab" id="who">
+              <ul>
+                <li><span>Transform Your Life</span><br><h9>We help individuals achieve fitness goals with expert guidance and personalized plans.</h9></li>
+                <li><span>Professional Guidance</span><br><h9>Certified trainers and wellness coaches for every member's success.</h9></li>
+              </ul>
+            </div>
 
-    </div>
-  </div>
-</div>
-<!-- ------------------------------Certificate Section---------------------------- -->
-<div id="certificate_section">
-  <div class="container">
-    <h1 class="sub-title">Certificates</h1>
-    <div class="certificate-list">
+            <div class="tab-contents" id="offer">
+              <ul>
+                <li><span>Gym Services</span><br><h9>Strength Training, Cardio, CrossFit, Functional Training</h9></li>
+                <li><span>Group Sessions</span><br><h9>Zumba, Yoga, Aerobics</h9></li>
+                <li><span>Wellness</span><br><h9>Spa, Steam, Sauna</h9></li>
+                <li><span>Support</span><br><h9>Nutrition Guidance, Fitness Assessments</h9></li>
+              </ul>
+            </div>
 
-      <div class="certificate">
-        <img src="images/googlecloud.png">
-        <div class="layer">
-          <h3>Android App Development Training Program</h3>
-          <a href="https://www.linkedin.com/in/deep-332437315/overlay/certifications/469173268/multiple-media-viewer/?profileId=ACoAAE_55BYBzbbSh_3A2dAHa7bqdWDpn8-UM3M&treasuryMediaId=1744225896409" target="_blank">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
+            <div class="tab-contents" id="timing">
+              <ul>
+                <li><span>📍 Address</span><br><h9>SCO 99-100, Sector 7, Karnal, Haryana</h9></li>
+                <li><span>🕒 Timings</span><br><h9>Mon–Sat: 5:00 AM – 10:00 PM<br>Sunday: 7:00 AM – 1:00 PM</h9></li>
+                <li><span>📞 Contact</span><br><h9>+91 99969 62555, 94665 90977</h9></li>
+                <li><span>📧 Email</span><br><h9>plannetfitnesskarnal@gmail.com</h9></li>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </div>
-
-      <div class="certificate">
-        <img src="images/udemy3.png">
-        <div class="layer">
-          <h3>Microsoft Learn</h3>
-          <a href="https://www.linkedin.com/in/deep-332437315/overlay/certifications/460186398/multiple-media-viewer/?profileId=ACoAAE_55BYBzbbSh_3A2dAHa7bqdWDpn8-UM3M&treasuryMediaId=1744216909599" target="_blank">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="certificate">
-        <img src="images/codechef.png">
-        <div class="layer">
-          <h3>Machine Learning Workshop</h3>
-          <!-- No link provided for this, you can add one if available -->
-        </div>
-      </div>
-
     </div>
 
-    <a href="https://www.linkedin.com/in/deep-332437315/" class="btn" target="_blank">See More</a>
+    <!-- Gallery Section -->
+    <div id="gallery">
+      <div class="container">
+        <h1 class="sub-title">Our Gym Gallery</h1>
+        <div class="gallery-grid">
+          <img src="images/gym1.jpg" alt="Gym 1">
+          <img src="images/gym2.jpg" alt="Gym 2">
+          <img src="images/gym3.jpg" alt="Gym 3">
+          <img src="images/gym4.jpg" alt="Gym 4">
+          <img src="images/gym5.jpg" alt="Gym 5">
+          <img src="images/gym6.jpg" alt="Gym 6">
+          <img src="images/gym7.jpg" alt="Gym 7">
+          <img src="images/gym8.jpg" alt="Gym 8">
+          <img src="images/gym9.jpg" alt="Gym 9">
+          <img src="images/gym10.jpg" alt="Gym 10">
+        </div>
+      </div>
+    </div>
 
-  </div>
-</div>
-<!------------------------------Contact Form--------------------------------------------------------->  
-
-  <div id="contact">
-    <div class="container">
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
         <div class="row">
           <div class="contact-left">
-             <h1 class="sub-title">Contact Me</h1> 
-             <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;2003deepdeep@gmail.com</p>
-             <p><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91&nbsp; 9876543210</p><br>
-             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/deep-332437315/"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
-                <a href="https://github.com/Deep841"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
-                <!-- <a href="https://www.hackerrank.com/profile/ayushsusheel3"><i class="fa-brands fa-hackerrank"></i></a>&nbsp;&nbsp;
-                <a href="https://www.youtube.com/channel/UCrnE5dRXQiagYp3GqKyX3kw"><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp; -->
-                <!-- <a href="https://www.cloudskillsboost.google/public_profiles/3d867afc-e694-4396-9afc-0c5e8bda5f5f"><i class="fa-brands fa-google"></i></a> -->
-                
-             </div>
-             <a href="images/DeepResume.pdf" download class="btn2">Download Resume</a>
-          </div>
-          <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                <input type="text" name = "Name" placeholder="Your Name" required>
-                <input type="email" name= "Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="submit_btn" >Submit</button>
-              </form>
-              <span id="success_message"></span>
-
+            <h1 class="sub-title">Contact Us</h1>
+            <p><i class="fa-solid fa-phone-volume"></i> +91 99969 62555, 94665 90977</p>
+            <p><i class="fa-solid fa-envelope"></i> plannetfitnesskarnal@gmail.com</p>
+            <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/planet_fitness_and_spa/?hl=en" target="_blank">@planet_fitness_and_spa</a></p>
           </div>
         </div>
-    </div> 
-    <div class="copyright">
-        <p>Coppyright © <span>Deep</span> . Made with&nbsp; <i class="fas fa-heart"></i>&nbsp;&nbsp;by&nbsp;Deep</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; <span>Planet Fitness</span> | Made with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/deep-332437315/" target="_blank">Deep</a> | <a href="https://www.instagram.com/deep.pphhh?igsh=MXQxZXptMWt1YWVlZg%3D%3D&utm_source=qr" target="_blank">@deep.pphhh</a></p>
+      </div>
     </div>
-  </div>
 
-
-
-
-
-
-  
-
-
-
-
-
-    
-  <script>
+    <!-- Scripts -->
+    <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
-      
-      function opentab(tabName)
-      {
-          for(i of tablinks){
-              i.classList.remove("active-link")
-          }
-
-          for(j of tabcontents){
-              j.classList.remove("active-tab")
-          }
-
-          event.currentTarget.classList.add("active-link")
-          document.getElementById(tabName).classList.add("active-tab")
+      function opentab(tabName) {
+        for (let i of tablinks) {
+          i.classList.remove("active-link");
+        }
+        for (let j of tabcontents) {
+          j.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
       }
 
-   </script>
-
-
-   <script>
       var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
-      } 
-      function closemenu(){
+      }
+      function closemenu() {
         sidemenu.style.right = "-200px";
-      } 
-
-   </script>
-
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyJTTl_Si1to7hN4SMe6q7bgpIcS_R6nInRB_afAiqnNhIUiVWWQ2fhO8lGcpIFTTA5/exec'
-      const form = document.forms['submit-to-google-sheet']
-
-      const successMessage = document.getElementById("success_message")
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            successMessage.innerHTML = "Thankyou for contacting Me ,&nbsp;Will respond ASAP!"
-            setTimeout(function(){
-              successMessage.innerHTML = ""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-  </script>
-
-</body>
+      }
+    </script>
+  </body>
 </html>
-
-<!-- Thankyou for contacting Me ,&nbsp;Will respond ASAP! -->

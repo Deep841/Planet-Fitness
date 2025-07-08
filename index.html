@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Deep</title>
+    <title>Planet Fitness</title>
 
     <!----CSS link----->
     <link rel="stylesheet" href="style.css" />
@@ -23,78 +23,81 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificate_section">Certificates</a></li>
+                <li><a href="#projects">Gym pics</a></li>
+                <li><a href="#certificate_section">More pics</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
          </nav>
          <div class="header-text">
-              <h2> < AI / ML > </h2><br>
-              <h3>Hi&nbsp;, I'm &nbsp;<span>Deep...</span><br><br>Welcome to my Portfolio Website</h3>
+              <h2> < Planet Fitness GYM > </h2><br>
+              <h3>Hi&nbsp;, this is &nbsp;<span>Planet Fitness</span><br><br>Welcome to our Website</h3>
          </div> 
 
        </div>
     </div>
-  <!------------------------------About Section---------------------------- -->
-  <div id = "about">
-    <div class="container">
-      <div class="row">
-         <div class="about-col-1">
-            <img src="images/bg.png">
-         </div>
-        <div class="about-col-2">
-          <h2 class="sub-title">About Me</h2>
-          <p class="for_mobile">Insightful post graduate student looking forward to join a reputed organization in order to utilize my learning, skills and
-            work for the betterment of the company where I can serve as a valuable person.</p>
-
-           <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-           </div>  
-
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                  <li><span>1) Programming</span><br><h9> C++, Python, SQL, familier with: Java, R</h9></li>
-                  <li><span>2) UI Technologies</span><br><h9>Rshiny, shinydashboard, familier with: Jetpack Compose</h9></li>
-                  <li><span>3) Database Software</span><br><h9>MySQL Workbench, familier with:CSV/Excel, MongoDB</h9></li>
-                  <li><span>4) Libraries</span><br><h9>Numpy, Pandas, Matplotlib, Seaborn, familier with:MediaPipe, OpenCV, PaddleOCR, TextBlob, pyttsx3, SpeechRecognition</h9></li>
-                  <li><span>5) Tools</span><br><h9>Jupter Notebook, GitHub, VS code, </h9></li>
-                </ul>
-              </div>
-
-<div class="tab-contents" id="experience">
-  <ul>
-    <li>
-      <span>1) Machine Learning Intern</span><br>
-      <h4>Cognifyz Technology</h4>
-      <a href="https://github.com/Deep841/Cognifyz_Internship_Tasks_ML" target="_blank">
-        <i class="fas fa-external-link-alt"></i> View Project
-      </a>
-    </li>
-  </ul>
-</div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>1) TIET,Patiala (2024 - 2026)</span><br><h9>MCA</h9></li>
-              <li><span>1) KU,Kurukshetra (2021 - 2024)</span><br><h9>Bachelor in SCI NM</h9></li>
-              <li><span>2) The Century School , Haryana (2021)</span><br><h9>Senior Secondary Education</h9></li>
-              <li><span>3) Pratap Public School , Karnal (2019)</span><br><h9>High School</h9></li>
-            </ul>
-          </div>
-
-        </div>
+<!------------------------------About Section------------------------------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/bg.png" alt="Plannet Fitness and Spa">
       </div>
+      <div class="about-col-2">
+        <h2 class="sub-title">About Us</h2>
+        <p class="for_mobile">
+          Plannet Fitness and Spa is Karnal’s premium gym and wellness destination, designed for those who are serious about fitness, health, and a better lifestyle.
+        </p>
 
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('who')">Who We Are</p>
+          <p class="tab-links" onclick="opentab('offer')">What We Offer</p>
+          <p class="tab-links" onclick="opentab('timing')">Timings & Location</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="who">
+          <ul>
+            <li>
+              <span>Transform Your Life</span><br>
+              <h9>We are a modern gym and wellness space committed to helping individuals achieve their fitness goals through expert guidance, personalized plans, and a motivating environment.</h9>
+            </li>
+            <li>
+              <span>Professional Guidance</span><br>
+              <h9>Our certified trainers, nutrition experts, and wellness coaches ensure every member gets personal attention and sustainable results.</h9>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="offer">
+          <ul>
+            <li><span>Gym Services</span><br><h9>Strength Training, Cardio, CrossFit, Functional Training, Personal Training</h9></li>
+            <li><span>Group Sessions</span><br><h9>Zumba, Yoga, Aerobics</h9></li>
+            <li><span>Wellness</span><br><h9>Spa, Steam, Sauna, Relaxation Lounge</h9></li>
+            <li><span>Support</span><br><h9>Diet & Nutrition Guidance, Fitness Assessments, Progress Tracking</h9></li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="timing">
+          <ul>
+            <li><span>📍 Address</span><br><h9>SCO. 99-100, Sector 7 Main Market, Karnal, Haryana, India</h9></li>
+            <li><span>🕒 Timings</span><br>
+              <h9>Mon–Sat: 5:00 AM – 10:00 PM<br>Sunday: 7:00 AM – 1:00 PM</h9>
+            </li>
+            <li><span>📞 Contact</span><br><h9>+91-XXXXXXXXXX</h9></li>
+            <li><span>📧 Email</span><br><h9>plannetfitnesskarnal@gmail.com</h9></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </div>
-
-<!-- ------------------------------Projects Section---------------------------- -->
+</div>
+    
+<!-- ------------------------------Gym pics---------------------------- -->
 <div id="projects">
   <div class="container">
-    <h1 class="sub-title">About my Projects</h1><br>
+    <h1 class="sub-title">Gym pics</h1><br>
     <div class="projects-list">
       
       <div>

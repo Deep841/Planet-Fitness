@@ -1,4 +1,5 @@
 hi, my name is deep, i deployed this repo for planet fitness gym
+site is live at https://deep841.github.io/Planet-Fitness/
 # 🏋️‍♂️ Plannet Fitness and Spa – Gym Website
 
 Welcome to the official website repository of **Plannet Fitness and Spa**, a premier Gym and Wellness Centre located in Karnal, Haryana. This website showcases our offerings, trainers, spa services, and provides visitors with essential contact information and gym highlights.

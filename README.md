@@ -1,4 +1,4 @@
-hi, my name is deep, i deployed this repo for planet fitness gym
+hi, my name is deep, i deployed this repo for planet fitness gym and the 
 site is live at https://deep841.github.io/Planet-Fitness/
 # 🏋️‍♂️ Plannet Fitness and Spa – Gym Website
 

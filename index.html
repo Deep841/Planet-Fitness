@@ -5,142 +5,337 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Planet Fitness & Spa – Premium Gym and Wellness Centre in Karnal.">
   <title>Planet Fitness & Spa</title>
-
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/7a5bf939ff.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-<!-- HEADER -->
-<div id="header">
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-container">
+    <h2 class="logo">Planet<span>Fit</span></h2>
+    <ul id="sidemenu">
+      <li><a href="#header" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <a href="#contact" class="nav-cta">Join Now</a>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="header">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-tag">Karnal's #1 Fitness Destination</p>
+    <h1>Forge Your <span>Strongest</span><br>Self Here</h1>
+    <p class="hero-sub">World-class equipment · Expert trainers · Spa & Wellness</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Start Today</a>
+      <a href="#plans" class="btn btn-outline">View Plans</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- STATS -->
+<section id="stats">
   <div class="container">
-    <nav>
-      <h2 class="logo">Planet<span>Fit</span></h2>
-
-      <ul id="sidemenu">
-        <li><a href="#header" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-      </ul>
-
-      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
-
-    <div class="header-text">
-      <h2>&lt; Planet Fitness GYM &gt;</h2>
-      <h3>Transform Your <span>Body & Mind</span></h3>
-
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Join Now</a>
-        <a href="#about" class="btn btn-outline">Explore</a>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3><span class="count" data-target="1200">0</span>+</h3>
+        <p>Active Members</p>
+      </div>
+      <div class="stat-item">
+        <h3><span class="count" data-target="15">0</span>+</h3>
+        <p>Expert Trainers</p>
+      </div>
+      <div class="stat-item">
+        <h3><span class="count" data-target="8">0</span>+</h3>
+        <p>Years of Excellence</p>
+      </div>
+      <div class="stat-item">
+        <h3><span class="count" data-target="20">0</span>+</h3>
+        <p>Fitness Programs</p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ABOUT -->
-<div id="about">
+<section id="about">
   <div class="container">
     <div class="row">
-
-      <div class="about-col-1">
-        <img src="images/bg.png" alt="Gym">
+      <div class="about-col-1 reveal">
+        <img src="images/bg.png" alt="Gym Interior">
       </div>
-
-      <div class="about-col-2">
-        <h2 class="sub-title">About Us</h2>
-        <p class="for_mobile">Karnal's premium gym & wellness destination.</p>
-
+      <div class="about-col-2 reveal">
+        <p class="section-tag">Who We Are</p>
+        <h2 class="sub-title">More Than Just a Gym</h2>
         <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('who', event)">Who We Are</p>
+          <p class="tab-links active-link" onclick="opentab('who', event)">Our Story</p>
           <p class="tab-links" onclick="opentab('offer', event)">What We Offer</p>
-          <p class="tab-links" onclick="opentab('timing', event)">Timings</p>
+          <p class="tab-links" onclick="opentab('timing', event)">Visit Us</p>
         </div>
-
         <div class="tab-contents active-tab" id="who">
           <ul>
-            <li><span>Transform Life</span><br><p>We help achieve fitness goals with expert guidance.</p></li>
-            <li><span>Expert Trainers</span><br><p>Certified professionals for every member.</p></li>
+            <li><span>Transform Your Life</span><br><p>We help you achieve your fitness goals with personalized expert guidance and state-of-the-art facilities.</p></li>
+            <li><span>Certified Professionals</span><br><p>Our trainers are nationally certified and dedicated to every member's success.</p></li>
           </ul>
         </div>
-
         <div class="tab-contents" id="offer">
           <ul>
-            <li><span>Gym</span><br><p>Strength, Cardio, Functional Training</p></li>
-            <li><span>Classes</span><br><p>Zumba, Yoga, Aerobics</p></li>
-            <li><span>Wellness</span><br><p>Spa, Sauna, Steam</p></li>
+            <li><span>🏋️ Gym Floor</span><br><p>Strength, Cardio & Functional Training with premium equipment.</p></li>
+            <li><span>🧘 Group Classes</span><br><p>Zumba, Yoga, Aerobics & HIIT — something for everyone.</p></li>
+            <li><span>💆 Wellness Zone</span><br><p>Spa, Sauna & Steam for complete recovery and relaxation.</p></li>
           </ul>
         </div>
-
         <div class="tab-contents" id="timing">
           <ul>
             <li><span>📍 Location</span><br><p>Karnal, Haryana</p></li>
-            <li><span>🕒 Timings</span><br><p>5 AM – 10 PM</p></li>
-            <li><span>📞 Contact</span><br><p>+91 99969 62555</p></li>
+            <li><span>🕒 Hours</span><br><p>Monday – Sunday: 5:00 AM – 10:00 PM</p></li>
+            <li><span>📞 Call Us</span><br><p>+91 99969 62555</p></li>
           </ul>
         </div>
-
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- GALLERY -->
-<div id="gallery">
+<!-- MEMBERSHIP PLANS -->
+<section id="plans">
   <div class="container">
-    <h1 class="sub-title">Gallery</h1>
+    <p class="section-tag center">Pricing</p>
+    <h2 class="sub-title center">Choose Your Plan</h2>
+    <div class="plans-grid">
 
-    <div class="gallery-grid">
-      <img src="images/gym1.jpg">
-      <img src="images/gym2.jpg">
-      <img src="images/gym3.jpg">
-      <img src="images/gym4.jpg">
-      <img src="images/gym5.jpg">
-      <img src="images/gym6.jpg">
-      <img src="images/gym7.jpg">
-      <img src="images/gym8.jpg">
-      <img src="images/gym9.jpg">
-      <img src="images/gym10.jpg">
+      <div class="plan-card reveal">
+        <div class="plan-header">
+          <h3>Basic</h3>
+          <div class="plan-price"><span>₹</span>999<small>/mo</small></div>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Gym Floor Access</li>
+          <li><i class="fa-solid fa-check"></i> Locker Room</li>
+          <li><i class="fa-solid fa-check"></i> 2 Group Classes/week</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Personal Trainer</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Spa & Sauna</li>
+        </ul>
+        <a href="#contact" class="btn plan-btn">Get Started</a>
+      </div>
+
+      <div class="plan-card featured reveal">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-header">
+          <h3>Pro</h3>
+          <div class="plan-price"><span>₹</span>1799<small>/mo</small></div>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Gym Floor Access</li>
+          <li><i class="fa-solid fa-check"></i> Locker Room</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited Group Classes</li>
+          <li><i class="fa-solid fa-check"></i> 4 PT Sessions/month</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Spa & Sauna</li>
+        </ul>
+        <a href="#contact" class="btn plan-btn">Get Started</a>
+      </div>
+
+      <div class="plan-card reveal">
+        <div class="plan-header">
+          <h3>Elite</h3>
+          <div class="plan-price"><span>₹</span>2999<small>/mo</small></div>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Gym Floor Access</li>
+          <li><i class="fa-solid fa-check"></i> Locker Room</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited Group Classes</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited PT Sessions</li>
+          <li><i class="fa-solid fa-check"></i> Spa & Sauna Access</li>
+        </ul>
+        <a href="#contact" class="btn plan-btn">Get Started</a>
+      </div>
+
     </div>
   </div>
-</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <p class="section-tag center">Our Space</p>
+    <h2 class="sub-title center">Inside Planet Fitness</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="images/gym1.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym2.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym3.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym4.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym5.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym6.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym7.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym8.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym9.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+      <div class="gallery-item reveal"><img src="images/gym10.jpg" alt="Gym"><div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div></div>
+    </div>
+  </div>
+</section>
 
 <!-- CONTACT -->
-<div id="contact">
+<section id="contact">
   <div class="container">
-    <h1 class="sub-title">Contact Us</h1>
+    <p class="section-tag center">Get In Touch</p>
+    <h2 class="sub-title center">Start Your Journey</h2>
+    <div class="contact-wrapper">
 
-    <p><i class="fa fa-phone"></i> +91 99969 62555</p>
-    <p><i class="fa fa-envelope"></i> plannetfitnesskarnal@gmail.com</p>
-  </div>
+      <div class="contact-info reveal">
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Karnal, Haryana</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 99969 62555</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>plannetfitnesskarnal@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>Hours</h4>
+            <p>Mon–Sun: 5 AM – 10 PM</p>
+          </div>
+        </div>
+      </div>
 
-  <div class="copyright">
-    <p>© Planet Fitness | Made by Deep</p>
+      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+        <input type="email" placeholder="Email Address" required>
+        <select required>
+          <option value="" disabled selected>Select a Plan</option>
+          <option>Basic – ₹999/mo</option>
+          <option>Pro – ₹1799/mo</option>
+          <option>Elite – ₹2999/mo</option>
+          <option>Just Enquiring</option>
+        </select>
+        <textarea placeholder="Your Message (optional)" rows="4"></textarea>
+        <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-success" id="formSuccess">✅ Message sent! We'll contact you soon.</p>
+      </form>
+
+    </div>
   </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <h2 class="logo">Planet<span>Fit</span></h2>
+    <p>Karnal's premium gym & wellness destination.</p>
+    <div class="footer-links">
+      <a href="#header">Home</a>
+      <a href="#about">About</a>
+      <a href="#plans">Plans</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copy">© 2025 Planet Fitness & Spa · Designed by Deep</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <i class="fa-solid fa-xmark lb-close"></i>
+  <img id="lb-img" src="" alt="">
 </div>
 
-<!-- JS -->
 <script>
-function opentab(tabName, event) {
-  let tabs = document.getElementsByClassName("tab-links");
-  let contents = document.getElementsByClassName("tab-contents");
+/* Navbar scroll */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
 
-  for (let t of tabs) t.classList.remove("active-link");
-  for (let c of contents) c.classList.remove("active-tab");
+/* Mobile menu */
+const sidemenu = document.getElementById('sidemenu');
+function openmenu() { sidemenu.style.right = '0'; }
+function closemenu() { sidemenu.style.right = '-220px'; }
 
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabName).classList.add("active-tab");
+/* Tabs */
+function opentab(tabName, e) {
+  document.querySelectorAll('.tab-links').forEach(t => t.classList.remove('active-link'));
+  document.querySelectorAll('.tab-contents').forEach(c => c.classList.remove('active-tab'));
+  e.currentTarget.classList.add('active-link');
+  document.getElementById(tabName).classList.add('active-tab');
 }
 
-var sidemenu = document.getElementById("sidemenu");
+/* Counter animation */
+function animateCounters() {
+  document.querySelectorAll('.count').forEach(el => {
+    const target = +el.dataset.target;
+    let current = 0;
+    const step = Math.ceil(target / 60);
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current;
+      if (current >= target) clearInterval(timer);
+    }, 30);
+  });
+}
 
-function openmenu() { sidemenu.style.right = "0"; }
-function closemenu() { sidemenu.style.right = "-200px"; }
+/* Scroll reveal */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* Stats trigger */
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); }
+}, { threshold: 0.5 });
+statsObserver.observe(document.getElementById('stats'));
+
+/* Active nav link on scroll */
+const sections = document.querySelectorAll('section[id], div[id="header"]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+  document.querySelectorAll('#sidemenu li a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+
+/* Lightbox */
+document.querySelectorAll('.gallery-item img').forEach(img => {
+  img.addEventListener('click', () => {
+    document.getElementById('lb-img').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+  });
+});
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+
+/* Form */
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('formSuccess').style.display = 'block';
+  e.target.reset();
+  setTimeout(() => document.getElementById('formSuccess').style.display = 'none', 4000);
+}
 </script>
-
 </body>
 </html>
-
